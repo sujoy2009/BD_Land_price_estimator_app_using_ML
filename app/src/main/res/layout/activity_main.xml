@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:gravity="center"
+    android:background="@drawable/back2"
+
+
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="22dp"
+
+
+        android:textSize="23dp"
+      android:textColor="#111010"
+        android:fontFamily="@font/b"
+
+        android:textStyle="bold"
+        android:text="1.Choose Location from below:"/>
+    <Spinner
+        android:id="@+id/locationid"
+        android:layout_width="180dp"
+        android:layout_height="35dp"
+
+        android:spinnerMode="dropdown"
+
+
+        android:entries="@array/loc"
+        android:layout_gravity="center"
+        android:backgroundTint="#2238FF"
+
+
+
+        android:layout_marginBottom="5dp"
+
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="245dp" />
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="5dp"
+        android:textSize="23dp"
+        android:textColor="#111010"
+        android:fontFamily="@font/b"
+        android:textStyle="bold"
+        android:text="2.Choose Region from below:"/>
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:outlineAmbientShadowColor="#1FB8A9"
+        android:outlineSpotShadowColor="#24348B"
+        android:id="@+id/regid"
+        android:orientation="vertical">
+        <RadioButton android:id="@+id/ctid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:textColorHighlight="#226CFF"
+            android:textSize="20dp"
+            android:textColor="#CA5C39"
+            android:fontFamily="@font/ita"
+
+            android:text="City Corperation"
+            />
+        <RadioButton android:id="@+id/zid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="#CA5C39"
+            android:fontFamily="@font/ita"
+            android:text="Zilla"
+        />
+        <RadioButton android:id="@+id/pouid"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="#CA5C39"
+            android:fontFamily="@font/ita"
+            android:text="Pourosova"
+            />
+        <RadioButton android:id="@+id/rid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:fontFamily="@font/ita"
+            android:textColor="#CA5C39"
+            android:text="Rural"
+            />
+    </RadioGroup>
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="5dp"
+        android:textSize="23dp"
+        android:textColor="#111010"
+        android:fontFamily="@font/b"
+
+        android:textStyle="bold"
+        android:text="3.Current available??"/>
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/currentavailid"
+        android:orientation="vertical">
+        <RadioButton android:id="@+id/ycid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="#CA5C39"
+            android:text="yes"
+            android:fontFamily="@font/ita"
+            />
+        <RadioButton android:id="@+id/ncid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="#CA5C39"
+            android:fontFamily="@font/ita"
+            android:text="No"
+            />
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="5dp"
+        android:textSize="23dp"
+        android:fontFamily="@font/b"
+        android:textColor="#111010"
+
+        android:textStyle="bold"
+        android:text="4.Gas available??"/>
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gasavailid"
+        android:orientation="vertical">
+        <RadioButton android:id="@+id/ygid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="#CA5C39"
+            android:fontFamily="@font/ita"
+            android:text="yes"
+            />
+        <RadioButton android:id="@+id/ngid"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="#CA5C39"
+            android:fontFamily="@font/ita"
+            android:text="No"
+            />
+
+    </RadioGroup>
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="5dp"
+        android:textSize="23dp"
+        android:textColor="#111010"
+        android:fontFamily="@font/b"
+
+        android:textStyle="bold"
+        android:text="5.Load shedding from below:"/>
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/loadshedtid"
+        android:orientation="vertical">
+        <RadioButton android:id="@+id/tenid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="#CA5C39"
+            android:text="Less than 10 min"
+            android:fontFamily="@font/ita"
+            />
+        <RadioButton android:id="@+id/oneid"
+            android:layout_width="wrap_content"
+            android:textSize="20dp"
+            android:textColor="#CA5C39"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ita"
+            android:text="Less than 1 hour"
+            />
+        <RadioButton android:id="@+id/twoid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ita"
+            android:textSize="20dp"
+            android:textColor="#CA5C39"
+            android:text="Less than 2 hour"
+            />
+        <RadioButton android:id="@+id/threeid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="More  than 2 Hour"
+            android:textSize="20dp"
+            android:textColor="#CA5C39"
+            android:fontFamily="@font/ita"
+
+            />
+    </RadioGroup>
+
+
+
+
+    <Button
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:text="Predict Price"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:textSize="20dp"
+        android:background="@drawable/background"
+        android:fontFamily="@font/ita"
+
+        android:id="@+id/predictid"
+        android:layout_marginTop="5dp"
+        />
+
+
+
+</LinearLayout>

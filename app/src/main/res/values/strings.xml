@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <array name="loc">
+
+        <item>Chattogram</item>
+        <item>Dhaka</item>
+        <item>Khulna</item>
+        <item>Rajshahi</item>
+        <item>Rangamati</item>
+        <item>Rangpur</item>
+        <item>Sylhet</item>
+
+    </array>
+
+</resources>
